@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D3C2AC5C-9A0F-4EB1-81BE-340EAB461CE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranking.Api", "src\Ranking.Api\Ranking.Api.csproj", "{B6469FE1-2352-4BBC-9F73-6F39A0C4DBA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6469FE1-2352-4BBC-9F73-6F39A0C4DBA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6469FE1-2352-4BBC-9F73-6F39A0C4DBA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6469FE1-2352-4BBC-9F73-6F39A0C4DBA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6469FE1-2352-4BBC-9F73-6F39A0C4DBA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B6469FE1-2352-4BBC-9F73-6F39A0C4DBA9} = {D3C2AC5C-9A0F-4EB1-81BE-340EAB461CE6}
+	EndGlobalSection
+EndGlobal
