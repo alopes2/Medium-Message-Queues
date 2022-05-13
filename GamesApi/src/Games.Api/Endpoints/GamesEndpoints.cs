@@ -103,7 +103,7 @@ public static class GamesEndpoints
             await dbContext.SaveChangesAsync();
 
             // Publishes GameDeleted event
-            await publishEndpoint.Publish(new GameDeleted { GameId = game.Id });
+            await publishEndpoint.Publish<GameDeleted>(new { GameId = game.Id });
 
             return Results.NoContent();
         });

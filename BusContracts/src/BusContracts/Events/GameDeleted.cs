@@ -1,6 +1,6 @@
 namespace BusContracts.Events;
 
-public class GameDeleted
+public interface GameDeleted
 {
-    public int GameId { get; set; }
+    int GameId { get; set; }
 }
