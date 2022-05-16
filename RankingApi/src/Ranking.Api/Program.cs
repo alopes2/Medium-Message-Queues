@@ -28,7 +28,7 @@ builder.Services.AddMassTransit(x =>
 
         rabbit.ReceiveEndpoint("game-deletion-queue", e =>
         {
-            e.Consumer<GameDeletedConsumer>(context);
+            e.ConfigureConsumer<GameDeletedConsumer>(context);
         });
     });
 
@@ -44,7 +44,7 @@ builder.Services.AddMassTransit(x =>
 
     //     aws.ReceiveEndpoint("games-ranking-queue", e =>
     //     {
-    //         e.Consumer<DeleteGameConsumer>(context);
+    //         e.ConfigureConsumer<DeleteGameConsumer>(context);
     //     });
     // });
 });

@@ -38,7 +38,7 @@ builder.Services.AddMassTransit(x =>
         rabbit.ReceiveEndpoint("games-ranking-queue", endpoint =>
         {
             // Sets the consumer to be used for the endpoint
-            endpoint.Consumer<UpdateGameRankConsumer>(context);
+            endpoint.ConfigureConsumer<UpdateGameRankConsumer>(context);
         });
     });
 
@@ -54,7 +54,7 @@ builder.Services.AddMassTransit(x =>
 
     //     aws.ReceiveEndpoint("games-ranking-queue", endpoint =>
     //     {
-    //         endpoint.Consumer<RankingGamesConsumer>(context);
+    //         endpoint.ConfigureConsumer<RankingGamesConsumer>(context);
     //     });
     // });
 });
