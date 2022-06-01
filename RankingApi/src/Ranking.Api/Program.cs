@@ -32,7 +32,7 @@ builder.Services.AddMassTransit(x =>
         });
     });
 
-    // config.UsingAmazonSqs((context, aws) =>
+    // X.UsingAmazonSqs((context, aws) =>
     // {
     //     aws.UseMessageRetry(x => x.Interval(2, 1000));
     
@@ -42,9 +42,9 @@ builder.Services.AddMassTransit(x =>
     //         h.SecretKey("SECRET_KEY");
     //     });
 
-    //     aws.ReceiveEndpoint("games-ranking-queue", e =>
+    //     aws.ReceiveEndpoint("game-deletion-queue", e =>
     //     {
-    //         e.ConfigureConsumer<DeleteGameConsumer>(context);
+    //         e.ConfigureConsumer<GameDeletedConsumer>(context);
     //     });
     // });
 });
